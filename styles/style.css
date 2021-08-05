@@ -1,0 +1,90 @@
+
+/* 
+
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Font
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+:root {
+    --clr-Moderate-violet: 		#7541c8;
+    --clr-Very-dark-grayish-blue: 		#48556a;
+    --clr-Very-dark-blackish-blue: #19212e;
+    --clr-White: 	#ffffff;
+
+    --clr-Light-gray:	#cfcfcf;
+    --clr-Light-grayish-blue:	#ecf2f8;
+
+}
+
+html{
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf2f8;
+    
+}
+.container{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 1.5rem;
+    max-width: 1300px;
+    min-width: 930px;
+}
+
+.card{
+    background-color: yellow;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.left-side{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+
+.Daniel{
+    
+}
+.Jonathan{
+    
+}
+.Jeanette{
+   
+}
+.Patrick{
+    
+}
+.Kira{
+   
+}
