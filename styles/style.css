@@ -45,14 +45,20 @@ html{
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--clr-Light-grayish-blue);
+}
+section{
+    font-family: 'Barlow Semi Condensed', sans-serif;
     display: flex;
+    flex-direction: column;
+    margin: 0 10rem;
     justify-content: center;
     align-items: center;
     background-color: var(--clr-Light-grayish-blue);
 }
-
 
 .container{
   display: grid;
@@ -188,6 +194,9 @@ body {
 
 
 @media (max-width:991px){
+    section{
+        margin: 0rem 2rem;
+    }
     .container{
         display: grid;
         grid-gap: 2rem;
@@ -199,4 +208,14 @@ body {
                       'kira'
                       / 1fr;
       }
+  }
+
+
+  .attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin: -2rem 0;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
   }
