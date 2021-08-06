@@ -27,6 +27,9 @@ Note for text colors:
     --clr-Very-dark-blackish-blue: #19212e;
     --clr-White: 	#ffffff;
 
+    --clr-text-dark: rgba(72, 85, 106, 0.7);
+    --clr-text-light:rgba(236, 242, 248, 0.7);
+
     --clr-Light-gray:	#cfcfcf;
     --clr-Light-grayish-blue:	#ecf2f8;
 
@@ -47,44 +50,135 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ecf2f8;
-    
+    background-color: var(--clr-Light-grayish-blue);
 }
+
+
 .container{
-    width: 75%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 1.5rem;
-    max-width: 1300px;
-    min-width: 930px;
+  display: grid;
+  grid-gap: 2rem;
+  width: 100%;
+
+  margin: 10rem;
+  grid-template: 'dan dan jon kira'
+                'jea pat pat kira '
+                / 0.9fr 0.9fr 0.9fr 0.9fr;
 }
 
 .card{
-    background-color: yellow;
-    border-radius: 1rem;
-    padding: 2rem;
+    border-radius: 10px;
+    padding: 1.7rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
-.left-side{
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 3fr 1fr;
+.author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.author img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 1px solid var(--clr-White);
+}
 
+.author .name{
+    padding-left: 1rem;
+}
 
+.review h2{
+    padding: 1.2rem 0; 
+}
+/* Daniel */
 .Daniel{
-    
+    grid-area: dan;
+    background-color: var(--clr-Moderate-violet);
 }
+.Daniel .author .name h3{
+    color: var(--clr-White);
+}
+.Daniel .author .name p{
+    color: var(--clr-text-light);
+}
+.Daniel .review h2{
+    color: var(--clr-White);
+}
+.Daniel .review p{
+    color: var(--clr-text-light);
+}
+
+/* Jonathan */
 .Jonathan{
-    
+    grid-area: jon;
+    background-color: var(--clr-Very-dark-grayish-blue);
 }
+.Jonathan .author .name h3{
+    color: var(--clr-White);
+}
+.Jonathan .author .name p{
+    color: var(--clr-text-light);
+}
+.Jonathan .review h2{
+    color: var(--clr-White);
+}
+.Jonathan .review p{
+    color: var(--clr-text-light);
+}
+
+/* Jeanette */
 .Jeanette{
-   
+    grid-area: jea;
+    background-color: var(--clr-White);
 }
+.Jeanette .author .name h3{
+    color: var(--clr-text-dark);
+}
+.Jeanette .author .name p{
+    color: rgba(72, 85, 106, 0.5)
+}
+.Jeanette .review h2{
+    color: var(--clr-text-dark);
+}
+.Jeanette .review p{
+    color: rgba(72, 85, 106, 0.5)
+}
+
+/* Patrick */
 .Patrick{
-    
+    grid-area: pat;
+    background-color: var(--clr-Very-dark-blackish-blue);
+
 }
+.Patrick .author .name h3{
+    color: var(--clr-White);
+}
+.Patrick .author .name p{
+    color: var(--clr-text-light);
+}
+.Patrick .review h2{
+    color: var(--clr-White);
+}
+.Patrick .review p{
+    color: var(--clr-text-light);
+}
+
+/* Kira */
 .Kira{
-   
+    background-color: var(--clr-White);
+    grid-area: kira;
+}
+.Kira .author .name h3{
+    color: var(--clr-text-dark);
+
+}
+.Kira .author .name p{
+    color: rgba(72, 85, 106, 0.5)
+}
+.Kira .review h2{
+    color: var(--clr-text-dark);
+}
+.Kira .review p{
+    color: rgba(72, 85, 106, 0.5)
 }
