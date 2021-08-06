@@ -58,7 +58,6 @@ body {
   display: grid;
   grid-gap: 2rem;
   width: 100%;
-
   margin: 10rem;
   grid-template: 'dan dan jon kira'
                 'jea pat pat kira '
@@ -182,3 +181,18 @@ body {
 .Kira .review p{
     color: rgba(72, 85, 106, 0.5)
 }
+
+
+@media (max-width:991px){
+    .container{
+        display: grid;
+        grid-gap: 2rem;
+        margin: 4rem 2rem;
+        grid-template:'dan'
+                      'jon' 
+                      'jea' 
+                      'pat' 
+                      'kira'
+                      / 1fr;
+      }
+  }
