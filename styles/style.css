@@ -94,6 +94,10 @@ body {
 .Daniel{
     grid-area: dan;
     background-color: var(--clr-Moderate-violet);
+    background-image: url(../images/bg-pattern-quotation.svg) ;
+    background-repeat: no-repeat;
+    background-position-x:  85% ;
+
 }
 .Daniel .author .name h3{
     color: var(--clr-White);
